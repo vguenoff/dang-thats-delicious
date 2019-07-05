@@ -1,0 +1,10 @@
+extends layout
+
+include mixins/_storeForm
+
+block content
+  //- h1 You are on page #{title}
+  .inner
+    h2= title
+    //- +storeForm({ name: 'Wes' })
+    +storeForm()
